@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Home</title>
+</head>
+<body>
+    <h1>Cupcakes</h1>
+    <ul id="cupcake-list">
+    </ul>
+    <div id="cupcake-form">
+        <form>
+            <h2>Add Cupcake</h2>
+            <label for="flavor">Flavor</label>
+            <input type="text" name="flavor" id='flavor' placeholder="Cupcake Flavor" required><br>
+            <h3>Cupcake Size</h3>
+            <input type="radio" name="size" id='sm' value="small">
+            <label for="sm">Small</label>
+            <input type="radio" name="size" id='med' value="medium">
+            <label for="med">Medium</label>
+            <input type="radio" name="size" id='lrg' value="large">
+            <label for="lrg">Large</label>
+            <br>
+            <label for="rating">Rating</label>
+            <input type="text" name="rating" placeholder="Input a number between 1 and 10" required>
+            <label for="img">Image URL</label>
+            <input type="text" name="img" placeholder="Cupcake image URL">
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
